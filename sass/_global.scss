@@ -22,11 +22,12 @@ button{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    // padding: 0 44px;
 }
 
 .button {
     display: inline-block;
-    padding: 13px 45px;
+    padding: 13px 63px;
     border-radius: 100rem;
     font-family: $font;
     line-height: 1;
@@ -50,8 +51,7 @@ button{
 
     &--rounded {
         border-radius: 10px;
-        padding: 17px 65px;
-
+        padding: 22px 78px;
         &--shadow {
             //   box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
             position: relative;

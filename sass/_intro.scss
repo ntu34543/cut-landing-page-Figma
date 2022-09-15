@@ -1,5 +1,5 @@
 .intro {
-    margin-bottom: 95px;
+    margin-bottom: 34px;
     &-container{
         background: #ffffff;
         border-radius: 10px;
@@ -8,6 +8,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         min-height: 200px;
+        gap: 130px;
     }
     &-item{
         display: flex;

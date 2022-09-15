@@ -1,10 +1,10 @@
 .feature {
-  padding-bottom: 130px;
+  padding-bottom: 121px;
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 0 170px;
+    gap: 0 145px;
   }
   &-desc {
     margin-bottom: 23px;
@@ -18,6 +18,9 @@
     gap: 0 10px;
     margin-bottom: 21px;
     font-size: 14px;
+  }
+  &-content{
+    padding-right: 7px;
   }
 }
 

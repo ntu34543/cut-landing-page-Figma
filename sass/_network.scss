@@ -1,13 +1,14 @@
 .network{
     &-heading{
         max-width: 380px;
-        margin-left: auto;
+        margin-left: 101px;
         margin-right: auto;
     }
     &-image{
         margin-top: 155px;
         display: flex;
         justify-content: center;
+        margin-left: 29px;
     }
 }
 
@@ -16,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0 60px;
+        gap: 0 31px;
     }
 }
 
