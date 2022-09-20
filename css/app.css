@@ -493,40 +493,19 @@ button {
   margin-right: auto;
 }
 .customer-list {
-  display: grid;
-  justify-content: flex-start;
-  grid-auto-columns: 400px;
-  grid-auto-flow: column;
-  grid-gap: 3.1rem;
-  overflow: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-snap-stop: always;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  -webkit-overflow-scrolling: touch;
-  scroll-padding: 1rem;
-  grid-template-columns: unset;
-  margin-left: 30px;
   margin-top: -7px;
-}
-.customer-list::-webkit-scrollbar {
-  display: none;
-  width: 0;
-}
-.customer-list > * {
-  scroll-snap-align: start;
+  margin-left: -5px;
 }
 .customer-item {
   border: 2px solid #ddd;
   border-radius: 10px;
   padding: 30px;
 }
-.customer-active {
-  border: 2px solid #F53838;
+.customer-item.slick-current.slick-active {
+  border-color: #F53838;
 }
 .customer-top {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -556,56 +535,53 @@ button {
 }
 .customer .slick-track {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 60px;
+  gap: 0 50px;
+  padding-bottom: 60px;
 }
 .customer .slick-arrow {
-  display: flex;
-}
-.customer .slick-prev, .customer .slick-next {
   width: 60px;
   height: 60px;
   border-radius: 100rem;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  z-index: 10;
 }
 .customer .slick-prev {
   border: 1px solid #F53838;
   background-color: transparent;
-  right: -12px;
-  position: relative;
+  right: 82px;
 }
 .customer .slick-next {
   background-color: #F53838;
-  right: -31px;
-  position: relative;
+  right: 2px;
 }
 .customer .slick-dots {
+  list-style-type: none;
   display: flex;
-  padding-right: 822px;
+  align-items: center;
   gap: 0 15px;
+  transform: translateY(50%);
+  margin-left: 34px;
 }
-.customer .slick-large, .customer .slick-small {
+.customer .slick-dots button {
   font-size: 0;
+  width: 15px;
+  height: 15px;
   border-radius: 100rem;
   transition: all 0.2s linear;
 }
-.customer .slick-large {
-  width: 45px;
-  height: 15px;
+.customer .slick-dots .slick-active button {
   background-color: #F53838;
-}
-.customer .slick-small {
-  width: 15px;
-  height: 15px;
-  background-color: #DDE0E4;
+  width: 45px;
 }
 
 @media screen and (min-width: 1024px) {
   .customer-item {
-    height: 229px;
+    height: 277px;
   }
 }
 .subscribe {
